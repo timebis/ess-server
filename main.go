@@ -82,7 +82,6 @@ func setMaximalPowerHandler(w http.ResponseWriter, r *http.Request) {
 	store.Lock()
 	store.maximalPower = body.Value
 	store.Unlock()
-
 }
 
 // Handler to get maximalPower
